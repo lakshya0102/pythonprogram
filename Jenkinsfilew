@@ -1,0 +1,7 @@
+node{
+  stage('SCM Checkout'){
+  git 'https://github.com/lakshya0102/pythonprogram/new/master'
+  }
+  stage('Compile Package){
+  sh 'mvn package'}
+}
